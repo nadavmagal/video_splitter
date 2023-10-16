@@ -20,6 +20,7 @@ output_dir = os.path.join(input_dir, 'mp4_videos')
 os.makedirs(output_dir, exist_ok=True)
 
 all_videos = [cur_name for cur_name in os.listdir(input_dir) if cur_name.endswith('.mpg')]
+all_videos = ['']
 
 for cur_name in all_videos:
     input_file = os.path.join(input_dir, cur_name)
